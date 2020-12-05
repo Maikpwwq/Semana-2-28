@@ -1,7 +1,6 @@
-<template>
-    <div id="">
-        <!-- Footer-->
-        <footer class="footer py-4">
+<template>            
+        <footer class="footer py-4" id="footer" >
+            <!-- Footer-->
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-4 text-lg-left">Copyright © Your Website 2020</div>
@@ -17,7 +16,6 @@
                 </div>
             </div>
         </footer>
-    </div>
 </template>
 
 <script>

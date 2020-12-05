@@ -1,10 +1,9 @@
-<template>
-    <div id="">
-        <!-- About-->
+<template>        
         <section class="page-section" id="about">
+            <!-- About-->
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h2 class="section-heading text-uppercase">Acerca de</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
                 <ul class="timeline">
@@ -12,8 +11,8 @@
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="../src/assets/img/about/1.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
+                                <h4>2020</h4>
+                                <h4 class="subheading">Nuestro humildes comienzos</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
                         </div>
@@ -22,7 +21,7 @@
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="../src/assets/img/about/2.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>March 2011</h4>
+                                <h4>Octubre 2020</h4>
                                 <h4 class="subheading">An Agency is Born</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
@@ -32,7 +31,7 @@
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="../src/assets/img/about/3.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>December 2012</h4>
+                                <h4>Noviembre 2020</h4>
                                 <h4 class="subheading">Transition to Full Service</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
@@ -42,7 +41,7 @@
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="../src/assets/img/about/4.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>July 2014</h4>
+                                <h4>Diciembre 2020</h4>
                                 <h4 class="subheading">Phase Two Expansion</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
@@ -51,18 +50,17 @@
                     <li class="timeline-inverted">
                         <div class="timeline-image">
                             <h4>
-                                Be Part
+                                Se Parte 
                                 <br />
-                                Of Our
+                                De Nuestra
                                 <br />
-                                Story!
+                                Historia!
                             </h4>
                         </div>
                     </li>
                 </ul>
             </div>
         </section> 
-    </div>
 </template>
 
 <script>
