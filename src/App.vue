@@ -14,9 +14,9 @@
 
 <script>
 import MainNavigation from "./components/MainNavigation";
-import OfertServices from "./components/MainNavigation";
-import ColombiaNews from "./components/MainNavigation";
-import TeamMembers from "./components/MainNavigation";
+import OfertServices from "./components/OfertServices";
+import ColombiaNews from "./components/ColombiaNews";
+import TeamMembers from "./components/TeamMembers";
 import AboutUs from "./components/AboutUs";
 import OurClients from "./components/OurClients";
 import FormContact from "./components/FormContact"; 
