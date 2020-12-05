@@ -9,6 +9,11 @@
     <OurClients/>
     <FormContact/>
     <FooterContent/>
+
+    <div class="container-fluid">
+      <colombia-news></colombia-news>
+    </div>gi
+
   </div>
 </template>
 
