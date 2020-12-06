@@ -62,38 +62,41 @@ export default {
   data() {
     return {
       equipo: [
-    {        
-        codigo: 1,
-        nombre: "Daniel Eslava",
-        descripcion: "Ingeniero Industrial de la Escuela de Ingenieros con énfasis en proyectos, hobbie trompetista .",
-        rol: "Ingeniero Indistrial / Desarrollador backend",
-        image: "./assets/img/integrantes/daniel.png"
-    },
-    {
-        codigo: 2,
-        nombre: "Carlos Ruiz",
-        descripcion: "Ingeniero de sistemas de la Universidad Nacional de Colombia, experiencia en uso de framework php (Yii), hobbie bailar salsa.",
-        rol: "Scrum Master",
-        image: "./assets/img/integrantes/carlos.ong"
-    },
-    {
-        codigo: 3,
-        nombre: "Michael Arias",
-        descripcion: "Director de proyectos de ingeniería, Ingeniero mecánico de la Universidad Distrital Francisco José de Caldas",
-        rol: "Desarrollador web (Ux-Ui)",
-        image: "./assets/img/integrantes/mike.jpeg"
-    },
-    {
-        codigo: 4,
-        nombre: "Heywin Meneses",
-        descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum ac elit et accumsan.",
-        rol: "Desarrollador backend",
-        image: "./assets/img/integrantes/heywin.jpeg"
-    }
-]
+        {
+          codigo: 1,
+          nombre: "Daniel Eslava",
+          descripcion:
+            "Ingeniero Industrial de la Escuela de Ingenieros con énfasis en proyectos, hobbie trompetista .",
+          rol: "Ingeniero Indistrial / Desarrollador backend",
+          image: "./assets/img/integrantes/daniel.png",
+        },
+        {
+          codigo: 2,
+          nombre: "Carlos Ruiz",
+          descripcion:
+            "Ingeniero de sistemas de la Universidad Nacional de Colombia, experiencia en uso de framework php (Yii), hobbie bailar salsa.",
+          rol: "Scrum Master",
+          image: "./assets/img/integrantes/carlos.ong",
+        },
+        {
+          codigo: 3,
+          nombre: "Michael Arias",
+          descripcion:
+            "Director de proyectos de ingeniería, Ingeniero mecánico de la Universidad Distrital Francisco José de Caldas",
+          rol: "Desarrollador web (Ux-Ui)",
+          image: "./assets/img/integrantes/mike.jpeg",
+        },
+        {
+          codigo: 4,
+          nombre: "Heywin Meneses",
+          descripcion:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum ac elit et accumsan.",
+          rol: "Desarrollador backend",
+          image: "./assets/img/integrantes/heywin.jpeg",
+        },
+      ],
     };
   },
-  
 };
 </script>
 
@@ -106,5 +109,4 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-
 </style>
