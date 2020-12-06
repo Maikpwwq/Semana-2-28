@@ -3,7 +3,7 @@
     <img
       class="mx-auto rounded-circle"
       v-bind:src="member.image"
-      alt="Carlos Ruiz"
+      :alt="member.nombre"
     />
     <h4>{{ member.codigo }}. {{ member.nombre }}</h4>
     <p class="text-muted">{{ member.rol }}</p>

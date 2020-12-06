@@ -1,10 +1,23 @@
 <template>
   <div id="app">
     <img alt="Welcome team 28" src="./assets/img/MisionTIC.jpg" />
-    <MainNavigation msg="Sprint semana 2" />
-    <OfertServices />
-    <ColombiaNews />
-
+    <MainNavigation msg="Sprint semana 2"/>
+    <OfertServices/>
+    <section class="page-section bg-light" id="no">
+        <!-- News Grid 2 x 2 -->
+        <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Noticias recientes</h2>
+                    <h3 class="section-subheading text-muted">Descubra los ultimos acontecimientos.</h3>
+                </div>
+                <div class="row text-center">
+                
+                  <colombia-news></colombia-news>
+                  
+                </div>
+        </div>
+    </section>
+    <!--Sec Miembros-->
     <section class="page-section bg-light" id="team">
       <div class="container">
         <div class="text-center">
@@ -25,15 +38,11 @@
         </div>
       </div>
     </section>
-
-    <AboutUs />
-    <OurClients />
-    <FormContact />
-    <FooterContent />
-
-    <div class="container-fluid">
-      <colombia-news></colombia-news>
-    </div>
+    <!--Fin Miembros-->
+    <AboutUs/>
+    <OurClients/>
+    <FormContact/>
+    <FooterContent/>
   </div>
 </template>
 
@@ -68,7 +77,7 @@ export default {
           descripcion:
             "Ingeniero Industrial de la Escuela de Ingenieros con énfasis en proyectos, hobbie trompetista .",
           rol: "Ingeniero Indistrial / Desarrollador backend",
-          image: "./assets/img/integrantes/daniel.png",
+          image: "./assets/img/integrantes/daniel.png"
         },
         {
           codigo: 2,
@@ -76,7 +85,7 @@ export default {
           descripcion:
             "Ingeniero de sistemas de la Universidad Nacional de Colombia, experiencia en uso de framework php (Yii), hobbie bailar salsa.",
           rol: "Scrum Master",
-          image: "./assets/img/integrantes/carlos.ong",
+          image: "./assets/img/integrantes/carlos.ong"
         },
         {
           codigo: 3,
@@ -84,7 +93,7 @@ export default {
           descripcion:
             "Director de proyectos de ingeniería, Ingeniero mecánico de la Universidad Distrital Francisco José de Caldas",
           rol: "Desarrollador web (Ux-Ui)",
-          image: "./assets/img/integrantes/mike.jpeg",
+          image: "./assets/img/integrantes/mike.jpeg"
         },
         {
           codigo: 4,
@@ -92,7 +101,7 @@ export default {
           descripcion:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum ac elit et accumsan.",
           rol: "Desarrollador backend",
-          image: "./assets/img/integrantes/heywin.jpeg",
+          image: "./assets/img/integrantes/heywin.jpeg"
         },
       ],
     };
