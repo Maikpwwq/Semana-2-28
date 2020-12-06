@@ -7,8 +7,11 @@
                     <h3 class="section-subheading text-muted">Tripulacion MisionTic2022 #elegidosparatriunfar.</h3>
                 </div>
                 <div class="row">
+                    
                 <!-- Importar aqui las tarjetas y ciclar -->
+                    <TeamCard>
 
+                    </TeamCard>
                 </div>
                 <div class="row">
                     <div class="col-lg-8 mx-auto text-center">
@@ -20,8 +23,13 @@
 </template>
 
 <script>
+import TeamCard from "./TeamCard";
+
     export default {
         name: "TeamMembers",
+        components: {
+            TeamCard
+        },
         props: ['']
     };
 </script>

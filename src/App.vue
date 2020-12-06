@@ -3,7 +3,20 @@
     <img alt="Welcome team 28" src="./assets/img/MisionTIC.jpg" />
     <MainNavigation msg="Sprint semana 2"/>
     <OfertServices/>
-    <ColombiaNews/>
+    <section class="page-section bg-light" id="no">
+        <!-- News Grid 2 x 2 -->
+        <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Noticias recientes</h2>
+                    <h3 class="section-subheading text-muted">Descubra los ultimos acontecimientos.</h3>
+                </div>
+                <div class="row text-center">
+                
+                  <colombia-news></colombia-news>
+                  
+                </div>
+        </div>
+    </section>
     <TeamMembers/>
     <AboutUs/>
     <OurClients/>
