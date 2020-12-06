@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <MainNavigation msg="Welcome team 28"/>
+    <img alt="Welcome team 28" src="./assets/img/MisionTIC.jpg" />
+    <MainNavigation msg="Sprint semana 2"/>
     <OfertServices/>
     <ColombiaNews/>
     <TeamMembers/>
