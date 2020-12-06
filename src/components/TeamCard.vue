@@ -2,13 +2,12 @@
   <div class="team-member">
     <img
       class="mx-auto rounded-circle"
-      :src="member.imagen"
-      alt="Avatar"
-      title="Avatar"
+      v-bind:src="member.image"
+      alt="Carlos Ruiz"
     />
-    <h4>{{ member.nombre }}</h4>
+    <h4>{{ member.codigo }}. {{ member.nombre }}</h4>
     <p class="text-muted">{{ member.rol }}</p>
-    <p>{{ member.descripcion }}</p>
+    <p class="large text-muted">{{ member.descripcion }}</p>
     <a class="btn btn-dark btn-social mx-2" href="#!"
       ><i class="fab fa-twitter"></i
     ></a>

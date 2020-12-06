@@ -14,7 +14,7 @@
           </h3>
         </div>
         <div class="row">
-          <div id="contenedor" v-for="(item, index) of equipo" :key="index">
+          <div class="col-3" v-for="(item, index) of equipo" :key="index">
             <team-card :member="item"></team-card>
           </div>
         </div>
@@ -67,35 +67,28 @@ export default {
         nombre: "Daniel Eslava",
         descripcion: "Ingeniero Industrial de la Escuela de Ingenieros con énfasis en proyectos, hobbie trompetista .",
         rol: "Ingeniero Indistrial / Desarrollador backend",
-        image: "../assets/img/integrantes/daniel"
+        image: "src/assets/img/integrantes/daniel.png"
     },
     {
         codigo: 2,
         nombre: "Carlos Ruiz",
         descripcion: "Ingeniero de sistemas de la Universidad Nacional de Colombia, experiencia en uso de framework php (Yii), hobbie bailar salsa.",
         rol: "Scrum Master",
-        image: "./assets/img/integrantes/carlos.png"
+        image: "src/assets/img/integrantes/carlos.ong"
     },
     {
         codigo: 3,
         nombre: "Michael Arias",
         descripcion: "Director de proyectos de ingeniería, Ingeniero mecánico de la Universidad Distrital Francisco José de Caldas",
         rol: "Desarrollador web (Ux-Ui)",
-        image: "../assets/img/integrantes/mike.jpeg"
+        image: "src/assets/img/integrantes/mike.jpeg"
     },
     {
         codigo: 4,
-        nombre: "Lucas Mera",
-        descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum ac elit et accumsan.",
-        rol: "Desarrollador backend",
-        image: "path/to/image"
-    },
-    {
-        codigo: 5,
         nombre: "Heywin Meneses",
         descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum ac elit et accumsan.",
         rol: "Desarrollador backend",
-        image: "path/to/image"
+        image: "src/assets/img/integrantes/heywin.jpeg"
     }
 ]
     };
@@ -113,7 +106,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-#contenedor{
-  width: 20%;
-}
+
 </style>

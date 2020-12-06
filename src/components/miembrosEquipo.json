@@ -18,7 +18,7 @@
         "nombre": "Michael Arias",
         "descripcion": "Director de proyectos de ingeniería, Ingeniero mecánico de la Universidad Distrital Francisco José de Caldas",
         "rol": "Desarrollador web (Ux-Ui)",
-        "image": "../assets/img/integrantes/mike.jpeg"
+        "image": "src/assets/img/integrantes/mike.jpeg"
     },
     {
         "codigo": 4,
