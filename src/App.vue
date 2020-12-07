@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Welcome team 28" src="./assets/img/MisionTIC.jpg" />
+    <!-- <img alt="Welcome team 28" src="./assets/img/MisionTIC.jpg" /> -->    
     <MainNavigation msg="Sprint semana 2"/>
     <OfertServices/>
     <section class="page-section bg-light" id="no">

@@ -37,6 +37,7 @@ import axios from "axios";
                 "http://newsapi.org/v2/everything?q=bitcoin&from=2020-11-05&sortBy=publishedAt&apiKey=86f5fc18d0104238b72bf07b6e3814e9"
             )
             .then((response) => {
+                console.log(response)
                 (this.news = response.data.articles.slice(7,11)),
                 console.log(this.news)
                 })

@@ -3,8 +3,8 @@
             <!-- About-->
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Acerca de</h2>
-                    <h3 class="section-subheading text-muted">Competencias desarrolladas durante el programa MisionTic2022.</h3>
+                    <h2 class="section-heading text-uppercase">Misión Tic - 2022</h2>
+                    <h3 class="section-subheading text-muted">Competencias acerca del programa.</h3>
                 </div>
                 <ul class="timeline">
                     <li>
