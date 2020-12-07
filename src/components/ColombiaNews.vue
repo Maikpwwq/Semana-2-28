@@ -32,21 +32,25 @@ import axios from "axios";
                 news: null,
             };
         },
-        mounted() {
-            axios.get(
-                "http://newsapi.org/v2/everything?q=bitcoin&from=2020-11-05&sortBy=publishedAt&apiKey=86f5fc18d0104238b72bf07b6e3814e9"
-            )
-            .then((response) => {
-                console.log(response)
-                (this.news = response.data.articles.slice(7,11)),
-                console.log(this.news)
+        methods: {
+            getNews: function (){
+                axios.get(
+                    "http://newsapi.org/v2/everything?q=bitcoin&from=2020-11-05&sortBy=publishedAt&apiKey=86f5fc18d0104238b72bf07b6e3814e9"
+                )
+                .then((response) => {
+                    console.log(response)
+                    (this.news = response.data.articles.slice(7,11)),
+                    console.log(this.news)
+                    })
+                .catch(error => {
+                    console.log(error)
+                    this.errored = true
                 })
-            .catch(error => {
-                console.log(error)
-                this.errored = true
-            })
-            .finally(() => this.loading = false)
-            
+                .finally(() => this.loading = false)
+            }
+        },
+        mounted() {
+            this.getNews();            
         },
     };
 </script>
