@@ -6,62 +6,56 @@
                     <h2 class="section-heading text-uppercase">Un increible equipo</h2>
                     <h3 class="section-subheading text-muted">Tripulacion MisionTic2022 #elegidosparatriunfar.</h3>
                 </div>
+                    
                 <div class="row">
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="../assets/img/integrantes/carlos.png" alt="Carlos Ruiz" title="Carlos Ruiz"/>
-                            <h4>Charlitos</h4>
-                            <p class="text-muted">Lead Designer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+                    <div class="col-3" v-for="(item, index) of equipo" :key="index">
+                        <team-card :member="item"></team-card>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="../assets/img/integrantes/daniel.png" alt="Daniel Eslava" title="Daniel Eslava"/>
-                            <h4>Daniel Eslava</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="../assets/img/integrantes/heywin.jpeg" alt="Heywin Meneses" title="Heywin Meneses"/>
-                            <h4>Heywin Meneses</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="../assets/img/integrantes/mike.jpeg" alt="Michael Arias" title="Michael Arias"/>
-                            <h4>Mike_col</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-
                 </div>
+                
                 <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">El Motivante del desarrollo.</p></div>
+                    <div class="col-lg-8 mx-auto text-center">
+                        <p class="large text-muted">El Motivante del desarrollo.</p>
+                    </div>
                 </div>
             </div>
     </section>
 </template>
 
 <script>
+import TeamCard from "./TeamCard";
+//import miembrosEquipo from "./";
+
     export default {
         name: "TeamMembers",
-        props: ['']
+        components: {
+            TeamCard
+        },
+        // Miembros grupo 28
+        data() {
+            return {
+                equipo: [''],
+            };
+        },
+        methods: {
+            getJson: function (){
+                axios.get(
+                    "../data/miembrosEquipo.json"
+                )
+                .then((response) => {
+                    (this.equipo = response.data),
+                    console.log(this.equipo)
+                    })
+                .catch(error => {
+                    console.log(error)
+                    this.errored = true
+                })
+                .finally(() => this.loading = false) 
+            }
+        },
+        mounted() {
+            this.getJson();
+        },
     };
 </script>
 

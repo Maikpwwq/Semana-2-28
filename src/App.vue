@@ -1,9 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <MainNavigation msg="Welcome team 28"/>
+    <!-- <img alt="Welcome team 28" src="./assets/img/MisionTIC.jpg" /> -->    
+    <MainNavigation msg="Sprint semana 2"/>
     <OfertServices/>
-    <ColombiaNews/>
+    <section class="page-section bg-light" id="no">
+        <!-- News Grid 2 x 2 -->
+        <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Noticias recientes</h2>
+                    <h3 class="section-subheading text-muted">Descubra los ultimos acontecimientos.</h3>
+                </div>
+                <div class="row text-center">
+                
+                  <colombia-news></colombia-news>
+                  
+                </div>
+        </div>
+    </section>
     <TeamMembers/>
     <AboutUs/>
     <OurClients/>
@@ -14,9 +27,9 @@
 
 <script>
 import MainNavigation from "./components/MainNavigation";
-import OfertServices from "./components/MainNavigation";
-import ColombiaNews from "./components/MainNavigation";
-import TeamMembers from "./components/MainNavigation";
+import OfertServices from "./components/OfertServices";
+import ColombiaNews from "./components/ColombiaNews";
+import TeamMembers from "./components/TeamMembers";
 import AboutUs from "./components/AboutUs";
 import OurClients from "./components/OurClients";
 import FormContact from "./components/FormContact"; 
