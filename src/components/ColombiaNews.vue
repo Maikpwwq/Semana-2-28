@@ -48,8 +48,13 @@ import axios from "axios";
             
         },
     };
+  },
+  mounted() {
+    axios
+      .get(
+        "http://newsapi.org/v2/everything?q=bitcoin&from=2020-11-05&sortBy=publishedAt&apiKey=86f5fc18d0104238b72bf07b6e3814e9"
+      )
+      .then((response) => (this.news = response.data.Search.slice(0, 4)));
+  },
+};
 </script>
-
-<style scoped>
-
-</style>
